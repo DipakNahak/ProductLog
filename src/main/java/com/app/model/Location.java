@@ -21,7 +21,7 @@ public class Location {
 	@GenericGenerator(name = "sequence_loc_id", strategy = "com.app.util.LocationIdGenerator")
 	@GeneratedValue(generator = "sequence_loc_id")  
 	private String locId;
-
+	@Column(name="locName", length=10)
 	private String locName;
 	@Column(name="locType", length=10)
 	private String locType;
