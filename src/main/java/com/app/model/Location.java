@@ -21,13 +21,21 @@ public class Location {
 	@GenericGenerator(name = "sequence_loc_id", strategy = "com.app.util.LocationIdGenerator")
 	@GeneratedValue(generator = "sequence_loc_id")  
 	private String locId;
+	@Column(name="locName", length=10)
 	private String locName;
+	@Column(name="locType", length=10)
 	private String locType;
+	@Column(name="pincode", length=10)
 	private String pincode;
+	@Column(name="shippingType", length=10)
 	private String shippingType;
+	@Column(name="contactDetails", length=10)
 	private String contactDetails;
+	@Column(name="processCode", length=10)
 	private String processCode;
+	@Column(name="localTransport", length=10)
 	private String localTransport;
+	
 	public String getLocId() {
 		return locId;
 	}
